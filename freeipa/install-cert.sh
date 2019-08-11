@@ -18,7 +18,7 @@ certbot certonly \
   --non-interactive --agree-tos -m $CMAIL \
   --dns-cloudflare \
   --dns-cloudflare-credentials /opt/freeipa-certbot/cloudflare.ini \
-  --deploy-hook /opt/proxmox-certbot/certbot-freeipa-deploy.sh \
+  --deploy-hook /opt/freeipa-certbot/certbot-freeipa-deploy.sh \
   --force-renewal \
   -d ${DOMAIN}
 
