@@ -20,6 +20,8 @@ ipa-cacert-manage install trustid-x3-root.pem
 
 rm trustid-x3-root.pem
 
+ipa-certupdate
+
 certbot certonly \
   --non-interactive --agree-tos -m $CMAIL \
   --dns-cloudflare \
